@@ -1,0 +1,134 @@
+import BrezisOP6
+
+/-!
+Run `lake env lean AxiomAudit.lean` on the server to inspect the Lean kernel
+axioms used by representative final theorems.  This file is intentionally not
+imported by the library root, so normal `lake build` output stays concise.
+-/
+
+#print axioms BrezisOP6.contactPolynomial_pos
+#print axioms BrezisOP6.radial_origin_coefficients
+#print axioms BrezisOP6.radial_origin_coefficients_on
+#print axioms BrezisOP6.radial_origin_coefficients_on_localTaylor
+#print axioms BrezisOP6.original_profiles_contact_pos_near_origin_on
+#print axioms BrezisOP6.original_profiles_contact_pos_near_origin_on_localTaylor
+#print axioms BrezisOP6.entire_profile_initial_slope_gt_of_taylor
+#print axioms BrezisOP6.profile_barrier_from_radial_ODE
+#print axioms BrezisOP6.far_p_scaled_residual_limit
+#print axioms BrezisOP6.radial_profile_trial_comparison
+#print axioms BrezisOP6.lower_exp_barrier_below_profile
+#print axioms BrezisOP6.upper_exp_barrier_above_profile
+#print axioms BrezisOP6.firstOrder_exp_sandwich
+#print axioms BrezisOP6.radial_profile_first_coefficient
+#print axioms BrezisOP6.radial_profile_second_coefficient
+#print axioms BrezisOP6.radial_profile_third_coefficient
+#print axioms BrezisOP6.radial_profile_derivative_sixth_bound
+#print axioms BrezisOP6.infinityW_eventually_pos_from_radial_ode
+#print axioms BrezisOP6.profile_barrier_from_ode_with_origin_start
+#print axioms BrezisOP6.radial_profile_contDiffOn_two_of_ode
+#print axioms BrezisOP6.profile_eta_barrier_on_positive_interval
+#print axioms BrezisOP6.profileContact_positive_on_ball_from_terminal_flux
+#print axioms BrezisOP6.original_profiles_origin_factor_tendsto_zero_on_ball
+#print axioms BrezisOP6.original_profiles_origin_factor_tendsto_zero_on_ball_localTaylor
+#print axioms BrezisOP6.initial_slope_order_from_origin_ratio
+#print axioms BrezisOP6.profilePicone_zero_mode_nonnegative
+#print axioms BrezisOP6.ball_zero_mode_nonnegative_of_contact_domain
+#print axioms BrezisOP6.ball_zero_mode_nonnegative_from_origin_taylor
+#print axioms BrezisOP6.ball_zero_mode_nonnegative_with_completed_profile_barrier
+#print axioms BrezisOP6.bridgeQuadraticDensity_sub_mean_nonneg
+#print axioms BrezisOP6.bridgeQuadratic_nonnegative_of_zero_mode
+#print axioms BrezisOP6.bridgeMeanDensity_integral_eq_profilePiconeDensity
+#print axioms BrezisOP6.sphereTrace_angular_gap
+#print axioms BrezisOP6.ball_integral_eq_polar_product
+#print axioms BrezisOP6.vectorSphereBridge_integral_nonneg
+#print axioms BrezisOP6.vectorSphereBridge_integral_nonneg_of_radial_L2_deriv
+#print axioms BrezisOP6.vectorSphereBridge_integral_nonneg_from_profiles
+#print axioms BrezisOP6.euclideanGradientSq_eq_radial_add_tangent
+#print axioms BrezisOP6.sphereAngularIntegrand_eq_tangent_sq
+#print axioms BrezisOP6.vectorScaledSphereAngularIntegrand_eq_tangent
+#print axioms BrezisOP6.vectorSphereAngularEnergy_scaled_eq_tangent_integral
+#print axioms BrezisOP6.euclideanGradientSq_scaled_trace_pointwise
+#print axioms BrezisOP6.vectorSphereAngularEnergy_scaled_eq_tangent_integral_of_contDiff
+#print axioms BrezisOP6.scalarSphereRayL2_hasDerivAt
+#print axioms BrezisOP6.scalarSphereFamilyTrace_ray_hasDerivAt
+#print axioms BrezisOP6.vectorSphereFamilyTrace_ray_hasDerivAt
+#print axioms BrezisOP6.scalarSphereRayL2Pos_hasDerivAt
+#print axioms BrezisOP6.scalarSphereFamilyTrace_ray_hasDerivAt_punctured
+#print axioms BrezisOP6.vectorSphereFamilyTrace_ray_hasDerivAt_punctured
+#print axioms BrezisOP6.scalarSphereFamilyTrace_ray_hasDerivAt_finiteBall
+#print axioms BrezisOP6.finiteBall_energy_gap_ge_bridge
+#print axioms BrezisOP6.euclideanGradientSq_radial_exact
+#print axioms BrezisOP6.euclideanGLDensity_gap_eq_radialRaw
+#print axioms BrezisOP6.energyRay_annulus_ibp
+#print axioms BrezisOP6.radialOriginFlux_uniform_tendsto_zero
+#print axioms BrezisOP6.energyRayNumerator_uniform_bound
+#print axioms BrezisOP6.radialBoundaryFlux_quotient_eq_origin
+#print axioms BrezisOP6.radius_integral_annulus_eq_interval
+#print axioms BrezisOP6.euclidean_annulus_energy_identity
+#print axioms BrezisOP6.energyReducedSpatialDensity_eq_singleProfileDensity
+#print axioms BrezisOP6.annulus_integral_tendsto_positiveBall
+#print axioms BrezisOP6.sphere_integral_uniform_flux_tendsto_zero
+#print axioms BrezisOP6.euclidean_positiveBall_energy_identity
+#print axioms BrezisOP6.energySpatialGapDensity_integral_split
+#print axioms BrezisOP6.energyOuterFlux_integral_zero
+#print axioms BrezisOP6.smooth_positiveBall_singleProfile_identity
+#print axioms BrezisOP6.energyPositiveClosedBall_restrict_eq_ball
+#print axioms BrezisOP6.quotient_inner_flux_envelope_of_continuity
+#print axioms BrezisOP6.energyQuotientNumerator_origin_regular
+#print axioms BrezisOP6.radial_origin_local_flux_bounds_on
+#print axioms BrezisOP6.euclideanBallEnergy_eq_of_eq_off_origin
+#print axioms BrezisOP6.quotient_inner_flux_envelope_of_localTaylor
+#print axioms BrezisOP6.smooth_openBall_singleProfile_identity
+#print axioms BrezisOP6.euclideanBall_energy_gap_ge_bridge_of_smooth_profiles
+#print axioms BrezisOP6.publishedC1_minimality_of_energyClosure
+#print axioms BrezisOP6.publishedC1_to_euclideanVortexBallMinimality
+#print axioms BrezisOP6.euclideanBall_energy_gap_ge_bridge_of_publishedC1
+#print axioms BrezisOP6.spherical_mode_density_nonneg
+
+/-! Representative endpoints of the completed concrete bridge and equality modules. -/
+#print axioms BrezisOP6.radial_profile_positive_radius_ivp_unique
+#print axioms BrezisOP6.actual_finiteBallSphereRadialMean_flux_right_limit
+#print axioms BrezisOP6.euclideanQuadraticBridge_ball_integral_eq_finiteFamily
+#print axioms BrezisOP6.finiteBall_vector_bridge_zero_forces_radial_ae
+#print axioms BrezisOP6.actual_quotient_identity_on_sphere_rays_of_bridge_equalities
+#print axioms BrezisOP6.smoothProfileBallInteriorData_second_shared_quotient_of_taylor_C1
+#print axioms BrezisOP6.actualSmoothBallEnergy_minimality_of_sphereBridge
+
+/-! Public end-to-end conditional endpoints. -/
+#print axioms BrezisOP6.physical_profile_ratio_extension_data
+#print axioms BrezisOP6.physical_radial_profiles_ordered_from_terminal_canonical
+#print axioms BrezisOP6.actual_finiteBallSphere_mean_integral_nonneg_of_C2_profiles
+#print axioms BrezisOP6.actual_smooth_ball_minimum_and_ae_equality_canonical
+#print axioms BrezisOP6.physical_smooth_ball_minimum_and_ae_equality
+#print axioms BrezisOP6.physical_ball_minimum_and_ae_uniqueness_of_smooth_closure
+
+/-! Paper-semantics additions: genuine distributional-gradient energy,
+fixed-trace strong density, quantitative equality, and epsilon transfer. -/
+#print axioms BrezisOP6.WeakH1L4BallField.energyDensity_integrable
+#print axioms BrezisOP6.hasWeakGradientOnBall_of_globalC1
+#print axioms BrezisOP6.WeakH1L4BallField.ofGlobalC1
+#print axioms BrezisOP6.physical_weak_ball_minimum_and_ae_equality_of_closure
+#print axioms BrezisOP6.euclideanBallEnergyEpsilon_unitBall_scaling
+#print axioms BrezisOP6.weakBallEnergyEpsilon_unitBall_scaling
+#print axioms BrezisOP6.profilePicone_zero_mode_annular_l2_from_profiles
+#print axioms BrezisOP6.radialRegularField_weak_energy_eq_vortex
+#print axioms BrezisOP6.physical_weak_ball_minimum_and_ae_equality_of_regular_base
+#print axioms BrezisOP6.weakBallEnergy_tendsto_of_strongH1L4
+#print axioms BrezisOP6.WeakSmoothFixedTraceStrongClosure.toEnergyClosure
+#print axioms BrezisOP6.bridgeQuadratic_controls_meanZero_radial_derivative_on_annulus
+#print axioms BrezisOP6.physical_weak_fixed_trace_strong_closure
+#print axioms BrezisOP6.actual_smooth_annular_energy_gap_uniform
+#print axioms BrezisOP6.physical_weak_ball_minimum_and_ae_equality
+#print axioms BrezisOP6.physicalWeakUnitBase_eq_vortex_on_unitBall
+#print axioms BrezisOP6.physical_weak_unit_epsilon_minimum_and_ae_equality
+
+/-! Public endpoints with the auxiliary slope variable and Taylor data constructed. -/
+#print axioms BrezisOP6.profileYZeroExtension_differentiable
+#print axioms BrezisOP6.PhysicalRadialDataCore.f_origin_coefficients
+#print axioms BrezisOP6.PhysicalRadialDataCore.F_origin_coefficients
+#print axioms BrezisOP6.PhysicalRadialDataCore.toPhysicalRadialData
+#print axioms BrezisOP6.C1FixedTraceZeroExtensionApproximation.ballEnergyClosure
+#print axioms BrezisOP6.publishedC1_and_standardTrace_to_ballMinimality
+#print axioms BrezisOP6.physical_weak_ball_minimum_and_ae_equality_from_core
+#print axioms BrezisOP6.physical_weak_unit_epsilon_minimum_and_ae_equality_from_core
+#print axioms BrezisOP6.physical_weak_unit_base_from_core_ae_eq_vortex
