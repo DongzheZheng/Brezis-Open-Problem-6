@@ -41,7 +41,7 @@ lake env lean -o .lake/build/lib/lean/BrezisOP6.olean BrezisOP6.lean
 lake env lean AxiomAudit.lean
 ```
 
-The separate root-module command refreshes the aggregate `.olean` used by the audit. [`AxiomAudit.lean`](AxiomAudit.lean) inspects representative theorems with `#print axioms`; the public endpoints report only Lean's logical axioms `propext`, `Classical.choice`, and `Quot.sound`. The source contains no `sorry`, `admit`, custom `axiom`, or `unsafe` declaration. This kernel check validates the proofs **under the four stated hypotheses**. See the [verification record](VERIFICATION.md) for the completed build and the [theorem map](PAPER_FORMALIZATION_MAP.zh-CN.md) for the detailed correspondence.
+The separate root-module command refreshes the aggregate `.olean` used by the audit. [`AxiomAudit.lean`](AxiomAudit.lean) inspects representative theorems with `#print axioms`; the public endpoints report only Lean's logical axioms `propext`, `Classical.choice`, and `Quot.sound`. The source contains no `sorry`, `admit`, custom `axiom`, or `unsafe` declaration. This kernel check validates the proofs **under the four stated hypotheses**. See the [verification record](VERIFICATION.md) for the completed build and the [theorem map](PAPER_FORMALIZATION_MAP.md) for the detailed correspondence.
 
 ## Repository guide
 
@@ -50,5 +50,5 @@ The separate root-module command refreshes the aggregate `.olean` used by the au
 | [`BrezisOP6/PhysicalWeakCanonicalYMain.lean`](BrezisOP6/PhysicalWeakCanonicalYMain.lean) | Public weak finite-ball and all-$\varepsilon$ unit-ball theorems. |
 | [`BrezisOP6/`](BrezisOP6/) | Profile comparison, Picone and spherical estimates, physical energy identities, annular stability, weak closure, and scaling. |
 | [`AxiomAudit.lean`](AxiomAudit.lean) | Kernel-axiom checks for the main proof chain. |
-| [`EXTERNAL_INPUTS.md`](EXTERNAL_INPUTS.md), [`PAPER_FORMALIZATION_MAP.zh-CN.md`](PAPER_FORMALIZATION_MAP.zh-CN.md), [`VERIFICATION.md`](VERIFICATION.md) | Mathematical dependencies, theorem correspondence, and reproducibility record. |
+| [`EXTERNAL_INPUTS.md`](EXTERNAL_INPUTS.md), [`PAPER_FORMALIZATION_MAP.md`](PAPER_FORMALIZATION_MAP.md), [`PROOF_MAP.md`](PROOF_MAP.md), [`STATUS.md`](STATUS.md), [`VERIFICATION.md`](VERIFICATION.md) | Mathematical dependencies, theorem and proof correspondence, formalization scope, and reproducibility record. |
 | [`vendor/DeGiorgi/`](vendor/DeGiorgi/) | Credited Sobolev approximation modules. Their exact upstream commit and Apache-2.0 license are recorded in the [vendor notice](vendor/DeGiorgi/README.md). |

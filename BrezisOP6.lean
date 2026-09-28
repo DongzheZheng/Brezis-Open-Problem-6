@@ -295,6 +295,6 @@ import BrezisOP6.ZeroModeAnnularCoercivitySharp
 
 The library root imports every public proof module. The smooth and analytic-
 closure endpoints, together with their explicit external hypotheses, are
-indexed in `README.md` and `PROOF_MAP.zh-CN.md`. The known two-dimensional
+indexed in `README.md` and `PROOF_MAP.md`. The known two-dimensional
 result is outside this project.
 -/
